@@ -191,6 +191,9 @@
 }
 
 .paddingbox {
-    padding: 3px;
+    padding: 1px;
+}
+.lili {
+    list-style: none;
 }
 
