@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Housing</title>
     <link rel="stylesheet" href="./css/main.css">
+
 </head>
 
 <body class="bg-light">
@@ -71,7 +72,6 @@
                         <a class="nav-item nav-link mx-2 b-no-active" href="#">Vuelos</a>
                         <a class="nav-item nav-link mx-2 b-no-active" href="#">Alquiler de Coches</a>
                         <a class="nav-item nav-link mx-2 b-no-active" href="#">Tours y Actividades</a>
-                        <a class="nav-item nav-link mx-2 b-no-active" href="#">Puto el que lee</a>
                     </div>
                 </div>
             </nav>
@@ -90,11 +90,11 @@
         <section>
             <!-- Tarea 17 - Breadcrumb - Gio -->
             <div id="bread" aria-label="breadcrumb">
-                    <ol class="breadcrumb bg-light ">
-                        <li class="breadcrumb-item "><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">San Diego</li>
-                    </ol>
-                </div>
+                <ol class="breadcrumb bg-light ">
+                    <li class="breadcrumb-item "><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">San Diego</li>
+                </ol>
+            </div>
         </section><!-- Fin Tarea 17 - Breadcrumb - Gio -->
 
         <div class="row">
@@ -104,14 +104,66 @@
                 <section>
                     <!-- Tarea 16 - Menu lateral - Gio-->
 
+                    <div class="card-group-item">
+                        <header class="card-header">
+                            <h6 class="title">Selection </h6>
+                        </header>
+                        <div class="filter-content">
+                            <div class="card-body">
+                                <div class="custom-control custom-checkbox">
+                                    <span class="float-right badge badge-light round">52</span>
+                                    <input type="checkbox" class="custom-control-input" id="Check1">
+                                    <label class="custom-control-label" for="Check1">Samsung</label>
+                                </div>
 
+                                <div class="custom-control custom-checkbox">
+                                    <span class="float-right badge badge-light round">132</span>
+                                    <input type="checkbox" class="custom-control-input" id="Check2">
+                                    <label class="custom-control-label" for="Check2">Black berry</label>
+                                </div>
 
+                                <div class="custom-control custom-checkbox">
+                                    <span class="float-right badge badge-light round">17</span>
+                                    <input type="checkbox" class="custom-control-input" id="Check3">
+                                    <label class="custom-control-label" for="Check3">Samsung</label>
+                                </div>
+
+                                <div class="custom-control custom-checkbox">
+                                    <span class="float-right badge badge-light round">7</span>
+                                    <input type="checkbox" class="custom-control-input" id="Check4">
+                                    <label class="custom-control-label" for="Check4">Other Brand</label>
+                                </div>
+                            </div> <!-- card-body.// -->
+                        </div>
+                    </div> <!-- card-group-item.// -->
                 </section><!-- Fin Tarea 16 - Menu lateral - Gio-->
 
-
-                <section>
+                <section class="d-none d-md-block">
                     <!--Tarea 15 - Destinos relacionados cercanos - Gio-->
+                    <div class="container">
+                        <div class="card-group-item">
+                            <h5 class="">Recomendaciones</h5>
+                            <div class="card bg-dark card-without-border my-2">
+                                <img src="./img/la.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title text-light gradient-card-bg ml-n1 mt-n1">California</h5>
+                                </div>
+                            </div>
+                            <div class="card bg-dark card-without-border my-2">
+                                <img src="./img/sfb.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title text-light gradient-card-bg ml-n1 mt-n1">San Francisco</h5>
+                                </div>
+                            </div>
+                            <div class="card bg-dark card-without-border my-2">
+                                <img src="./img/vegas.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title text-light gradient-card-bg ml-n1 mt-n1">Las Vegas</h5>
+                                </div>
+                            </div>
 
+                        </div>
+                    </div>
                 </section>
 
             </div>
@@ -126,7 +178,8 @@
                             <div class="row">
                                 <div class="col-sm main-background-responsive">
                                     <h1>SAN DIEGO</h1>
-                                    <p class="result-p">
+
+                                    <p class="result-p d-none d-lg-block d-xl-block">
                                         San Diego es una ciudad estadounidense. Ubicada en el condado de San Diego,
                                         California;
                                         en la costa del Océano Pacífico en el Sur de California, aproximadamente 190
@@ -145,6 +198,60 @@
 
                 <section>
                     <!-- Tarea 13 - Porcentaje de ocupacion - Fede  -->
+                    <div class="d-md-flex d-none mb-3 rounded border p-3">
+
+                        <!--img class="medidor" src="./img/grafico-ocupacion.jpg" alt="93% de Ocupación"-->
+                        <div class="px-2 d-flex flex-column">
+
+                            <h6 class="lead">San Diego esta a punto de entrar en terporada alta <span
+                                    class="text-warning">(42% de ocupación)</span></h6>
+                            <span class="text-muted">Aprovecha para hacer tu reservar tu hotel antes de que los precios
+                                suban, revisa lo precios en las fechas que deseas hacer tu reservación</span>
+                            <div class="d-flex justify-content-between mt-2">
+
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="text-center p-1 w-100 bg-dark">
+                                        <h6 class="text-white">15 a 31 Ago.</h6>
+                                    </div>
+                                    <span class="text-muted">Desde $4300 por noche</span> <button type="button"
+                                        class="btn btn-outline-success">42%</button>
+                                </div>
+
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="text-center p-1 w-100 bg-dark">
+                                        <h6 class="text-white">01 a 15 Sep.</h6>
+                                    </div>
+                                    <span class="text-muted">Desde $4300 por noche</span>
+                                    <button type="button" class="btn btn-outline-warning">57%</button>
+                                </div>
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="text-center p-1 w-100 bg-dark">
+                                        <h6 class="text-white">15 a 31 Sep.</h6>
+                                    </div>
+                                    <span class="text-muted">Desde $5200 por noche</span>
+                                    <button type="button" class="btn btn-outline-warning">65%</button>
+                                </div>
+
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="text-center p-1 w-100 bg-dark">
+                                        <h6 class="text-white">01 a 15 Oct.</h6>
+                                    </div>
+                                    <span class="text-muted">Desde $5200 por noche</span>
+                                    <button type="button" class="btn btn-outline-danger">70%</button>
+                                </div>
+
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="text-center p-1 w-100 bg-dark">
+                                        <h6 class="text-white">15 a 31 Oct.</h6>
+                                    </div>
+                                    <span class="text-muted">Desde $5200 por noche</span>
+                                    <button type="button" class="btn btn-outline-danger">82%</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
 
                 </section><!-- Fin Porcentaje de ocupacion -->
 
@@ -166,7 +273,8 @@
                                         <div class="card-body">
                                             <h5 class="card-title">Hotel Handlery</h5>
                                             <p class="card-text">Ubicado solo a unos minutos de las mejores atracciones.
-                                                Veni a descansar junto a nuestra piscina climatizada al aire libre con paisajes tropicales.</p>
+                                                Veni a descansar junto a nuestra piscina climatizada al aire libre con
+                                                paisajes tropicales.</p>
                                             <p class="card-text"><small class="text-muted">Last updated 3 mins
                                                     ago</small></p>
                                             <span class="badge badge-warning botoncolor">9.5</span>
@@ -284,20 +392,13 @@
         </div>
 
 
-<<<<<<< HEAD
-
-
-
-
         <section>
             <!-- Tarea 16 - Menu lateral - Gio-->
 
-            
+
 
         </section>
 
-=======
->>>>>>> 5b2085cc1dbfa0a4c70b72d10b6d3b7f8893e80e
         <!-- --------------------- -->
     </main><!-- fin contenedor principal -->
     <!-- --------------------------- -->
@@ -308,6 +409,140 @@
 
     </footer><!-- fin Footer -->
 
+
+
+
+
+
+
+    <!-- Modal de Inicio de sesion y creacion de cuenta / Tarea 2 - Header -->
+    <div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal modal-dialog-centered" role="document">
+            <div class="modal-content border-0 bg-transparent">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="modal-body"">
+                                <div class=" card bg-light">
+                                <article class="card-body mx-auto" style="max-width: 400px;">
+                                    <h4 class="card-title mt-3 text-center">Crear Cuenta</h4>
+                                    <p class="text-center">Empieza con tu cuenta gratuita</p>
+                                    <div class="social-login d-flex justify-content-center">
+                                        <button class="btn m-1 facebook-btn social-btn text-white" type="button">
+                                            <span><i class="fab fa-facebook-f"></i> </span>
+                                        </button>
+                                        <button class="btn m-1 google-btn social-btn text-white" type="button">
+                                            <span><i class="fab fa-google-plus-g"></i></span>
+                                        </button>
+                                    </div>
+                                    <p class="divider-text">
+                                        <span class="bg-light">O</span>
+                                    </p>
+                                    <form>
+                                        <div class="form-group input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    <i class="fa fa-user"></i> </span>
+                                            </div>
+                                            <input name="" class="form-control" placeholder="Nombre" type="text">
+                                        </div>
+                                        <div class="form-group input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    <i class="fa fa-envelope"></i>
+                                                </span>
+                                            </div>
+                                            <input name="" class="form-control" placeholder="Email" type="email">
+                                        </div>
+                                        <div class="form-group input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    <i class="fa fa-lock"></i> </span>
+                                            </div>
+                                            <input class="form-control" placeholder="Contraseña" type="password">
+                                        </div>
+                                        <div class="form-group input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    <i class="fa fa-lock"></i> </span>
+                                            </div>
+                                            <input class="form-control" placeholder="Repita la Contraseña"
+                                                type="password">
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary btn-block">
+                                                Crear Cuenta
+                                            </button>
+                                        </div>
+                                    </form>
+                                </article>
+                            </div> <!-- card.// -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- Fin Modal de Inicio de sesion y creacion de cuenta / Tarea 2 - Header -->
+    </div>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal modal-dialog-centered" role="document">
+            <div class="modal-content border-0 bg-transparent">
+                <div class="container">
+                    <div class="row">
+                        <div class="col align-self-center">
+                            <div class="modal-body">
+                                <div class="card bg-light">
+                                    <article class="card-body mx-auto" style="max-width: 400px;">
+                                        <h4 class="card-title mt-3 text-center">Entra con tu cuenta</h4>
+                                        <p class="text-center">Si ya tienes una cuenta, ingresa aquí</p>
+                                        <div class="social-login d-flex justify-content-center">
+                                            <button class="btn m-1 facebook-btn social-btn text-white" type="button">
+                                                <span><i class="fab fa-facebook-f"></i> </span>
+                                            </button>
+                                            <button class="btn m-1 google-btn social-btn text-white" type="button">
+                                                <span><i class="fab fa-google-plus-g"></i></span>
+                                            </button>
+                                        </div>
+                                        <p class="divider-text">
+                                            <span class="bg-light">OR</span>
+                                        </p>
+                                        <form>
+                                            <div class="form-group input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"> <i class="fa fa-envelope"></i>
+                                                    </span>
+                                                </div>
+                                                <input name="" class="form-control" placeholder="Email address"
+                                                    type="email">
+                                            </div>
+                                            <div class="form-group input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                                                </div>
+                                                <input class="form-control" placeholder="Contraseña" type="password">
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-primary btn-block">
+                                                    Entrar
+                                                </button>
+                                            </div>
+                                            <p class="text-center">No recuerdas la contraseña? <a href="">Recuperar
+                                                    Contraseña </a> </p>
+                                        </form>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- Fin Modal de Inicio de sesion y creacion de cuenta / Tarea 2 - Header -->
+    </div>
+
+    <script src="https://kit.fontawesome.com/23e52ac974.js"></script>
     <script type="text/javascript" src="./js/results.js"></script>
 
 </body>
